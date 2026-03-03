@@ -1,0 +1,63 @@
+{
+  "testCases": [
+    {
+      "testId": "TC-DWS-001",
+      "description": "Shopping cart management for desktops with price threshold $800",
+      "user": {
+        "gender": "male",
+        "firstName": "John",
+        "lastName": "Doe",
+        "password": "Test1234!"
+      },
+      "priceThreshold": 800,
+      "products": [
+        {
+          "name": "Build your own cheap computer",
+          "configuration": {
+            "processor": "#product_attribute_72_5_18_53",
+            "ram": "#product_attribute_72_6_19_54",
+            "hdd": "#product_attribute_72_3_20_57"
+          }
+        },
+        {
+          "name": "Build your own expensive computer",
+          "configuration": {
+            "processor": "#product_attribute_75_5_31_96",
+            "ram": "#product_attribute_75_6_32_100",
+            "hdd": "#product_attribute_75_3_33_102"
+          }
+        }
+      ],
+      "cartOperations": {
+        "updateQuantity": 2,
+        "itemToRemove": 1
+      }
+    },
+    {
+      "testId": "TC-DWS-002",
+      "description": "Shopping cart management with different user and single product",
+      "user": {
+        "gender": "female",
+        "firstName": "Jane",
+        "lastName": "Smith",
+        "password": "SecurePass123!"
+      },
+      "priceThreshold": 1000,
+      "products": [
+        {
+          "name": "Build your own cheap computer",
+          "configuration": {
+            "processor": "#product_attribute_72_5_18_53",
+            "ram": "#product_attribute_72_6_19_54",
+            "hdd": "#product_attribute_72_3_20_57"
+          }
+        }
+      ],
+      "cartOperations": {
+        "updateQuantity": 3,
+        "itemToRemove": null
+      }
+    }
+  ],
+  "baseUrl": "https://demowebshop.tricentis.com"
+}
