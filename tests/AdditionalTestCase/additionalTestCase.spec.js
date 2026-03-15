@@ -12,7 +12,7 @@ test('Pagination resets to one page after deleting last row on page 2', async ({
   await page.locator('.card-body', { hasText: 'Elements' }).click();
   await page.getByText('Web Tables').click();
 
-//   // Ensure table body is rendered
+  // Ensure table is rendered
  await page.locator('[title="Delete"]').first().waitFor();
 
   // Step 3: Get default rows-per-page value
@@ -20,7 +20,7 @@ test('Pagination resets to one page after deleting last row on page 2', async ({
     await page.locator('select.form-control').inputValue()
   );
 
-  // Step 4: Count only real data rows (rows that contain a delete button)
+  // Step 4: Count existing data rows
   const existingRows = await page.locator('[title="Delete"]').count();
 
   console.log(`Rows per page: ${rowsPerPage}`);

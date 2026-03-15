@@ -85,7 +85,7 @@ async function postcondition_logout(page) {
 
 const testCase = testData.testCases[0];
 
-test(`${testCase.testId}: Shopping cart management for desktops ≤ $${testCase.priceThreshold}`, async ({ page }) => {
+test(`${testCase.testId}: [InputData] Shopping cart management for desktops ≤ $${testCase.priceThreshold}`, async ({ page }) => {
     test.setTimeout(90000);
 
     // Preconditions (register user with data from JSON, verify that cart is empty)
@@ -178,7 +178,7 @@ test(`${testCase.testId}: Shopping cart management for desktops ≤ $${testCase.
     // Verification 3: Cart contains exactly 2 items
     await expect(cartRows).toHaveCount(2);
 
-    // Step 19: Change first item quantity (value from JSON)
+    // Step 19: Change first item quantity
     const firstUnitPriceText = await cartRows.first().locator('.product-unit-price').innerText();
     const firstUnitPrice = parseFloat(firstUnitPriceText.replace(/[^0-9.]/g, ''));
 
@@ -208,8 +208,6 @@ test(`${testCase.testId}: Shopping cart management for desktops ≤ $${testCase.
     // Verification 5: Only 1 item remains in cart
     await expect(page.locator('.cart-item-row')).toHaveCount(1);
 
-    // Postconditions (clean up cart, log out user)
-
     // Postcondition 1: Clean up cart (remove all items)
     await postcondition_cleanupCart(page);
 
@@ -219,3 +217,5 @@ test(`${testCase.testId}: Shopping cart management for desktops ≤ $${testCase.
     // Verification 6: User is logged out
     await expect(page.locator('.header-links a[href="/register"]')).toBeVisible();
 });
+
+// npx playwright test dataDrivenTest --headed

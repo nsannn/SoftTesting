@@ -1,0 +1,15 @@
+============================================================
+Scheduled Test Execution
+Timestamp: 2026-03-04T14:28:00.073Z
+============================================================
+
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] › tests\Part 4\dataDrivenTest.spec.js:88:1 › TC-DWS-001: [InputData] Shopping cart management for desktops ≤ $800
+[1A[2K  1 passed (17.7s)
+
+============================================================
+Test execution PASSED with exit code: 0
+Log saved to: C:\Users\noske\Desktop\Studijom\6 Semestras\Programų Testavimas\1 Lab\scheduled-test-logs\test-run-2026-03-04T14-28-00-056Z.log
+============================================================

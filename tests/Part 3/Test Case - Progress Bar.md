@@ -32,7 +32,7 @@ To validate the Progress Bar widget synchronization by testing out startt/stop f
 | 2 | Verification | **Verify** that the progress bar is initially at 0%. |
 | 3 | Verification | **Verify** that the Start button is visible and enabled. |
 | 4 | Action | Click the **Start** button to begin the progress. |
-| 5 | Synchronization | Wait for the progress bar to reach 100% using intelligent conditional waits. |
+| 5 | Synchronization | Wait for the progress bar to reach 100% |
 | 6 | Verification | **Verify** that the progress bar displays 100%. |
 | 7 | Verification | **Verify** that the button text has changed to "Reset". |
 | 8 | Action | Click the **Reset** button. |

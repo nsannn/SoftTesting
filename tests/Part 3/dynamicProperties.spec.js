@@ -26,7 +26,7 @@ test('TC-DP-001: Dynamic Properties Widget Test', async ({ page }) => {
     // Step 6 & 7 - Verification 4: "Visible After 5 Seconds" button becomes visible
     await expect(visibleAfterButton).toBeVisible({ timeout: 10000 });
 
-    // Step 8 - Verification 5: "Color Change" button has changed color (has 'text-danger' class)
+    // Step 8 - Verification 5: "Color Change" button has changed color
     await expect(colorChangeButton).toHaveClass(/text-danger/, { timeout: 10000 });
 });
 

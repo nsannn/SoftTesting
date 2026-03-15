@@ -55,7 +55,7 @@
       ],
       "cartOperations": {
         "updateQuantity": 3,
-        "itemToRemove": null
+        "itemToRemove": 2
       }
     }
   ],

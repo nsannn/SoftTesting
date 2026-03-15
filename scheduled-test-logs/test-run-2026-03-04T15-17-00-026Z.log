@@ -1,0 +1,25 @@
+============================================================
+Scheduled Test Execution
+Timestamp: 2026-03-04T15:17:00.029Z
+============================================================
+
+
+Running 6 tests using 6 workers
+
+[1A[2K[1/6] [chromium] › tests\Part 3\progressBarSync.spec.js:5:1 › TC-PB-001: Progress Bar Widget Synchronization Test
+[1A[2K[2/6] [chromium] › tests\Part 1\openHomePage.spec.js:3:1 › Open home page
+[1A[2K[3/6] [chromium] › tests\Part 3\dynamicProperties.spec.js:5:1 › TC-DP-001: Dynamic Properties Widget Test
+[1A[2K[4/6] [chromium] › tests\Part 4\dataDrivenTest.spec.js:88:1 › TC-DWS-001: [InputData] Shopping cart management for desktops ≤ $800
+[1A[2K[5/6] [chromium] › tests\AdditionalTestCase\additionalTestCase.spec.js:5:5 › Pagination resets to one page after deleting last row on page 2
+[1A[2K[6/6] [chromium] › tests\Part 2\testCase.spec.js:9:5 › TC-DWS-001: Shopping cart management for desktops ≤ $800
+[1A[2K[chromium] › tests\AdditionalTestCase\additionalTestCase.spec.js:5:5 › Pagination resets to one page after deleting last row on page 2
+Rows per page: 10
+
+[1A[2KExisting real rows: 3
+
+[1A[2K  6 passed (15.4s)
+
+============================================================
+Test execution PASSED with exit code: 0
+Log saved to: C:\Users\noske\Desktop\Studijom\6 Semestras\Programų Testavimas\1 Lab\scheduled-test-logs\test-run-2026-03-04T15-17-00-026Z.log
+============================================================
